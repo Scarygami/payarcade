@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PayArcade</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=VT323" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://www.paypalobjects.com/js/external/api.js"></script>
+  </head>
+  <body>
+    <div class="header">PayArcade!</div>
+    <div id="signin"><span id="paypalSignIn"></span></div>
+    <div id="game" style="display: none;">
+      <div id="player"></div>
+      <div id="credits">0 CREDITS</div>
+      <div id="insert">INSERT COIN<br>TO CONTINUE</div>
+      <div id="gameplay"></div>
+      <div id="pay50" class="pay" data-amount="0.50">
+        <div class="coinslot"></div>
+        <div class="paymessage">
+          <span class="huge">50c</span><br>
+          INSERT<br>
+          COIN TO<br>
+          PLAY<br>
+        </div>
+      </div>
+      <div id="pay100" class="pay" data-amount="1.00">
+        <div class="coinslot"></div>
+        <div class="paymessage">
+          <span class="huge">1EUR</span><br>
+          INSERT<br>
+          COIN TO<br>
+          PLAY<br>
+        </div>
+      </div>
+      <div id="start">START</div>
+    </div>
+    <script src="payarcade.js"></script>
+  </body>
+</html>

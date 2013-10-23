@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "PayArcade",
+  "description": "DevFest Vienna 2013 Hackathon Demo",
+  "version": "0.0.1",
+  "app": {
+    "launch": {
+      "local_path": "main.html",
+      "container": "panel",
+      "height": 480,
+      "width": 640,
+      "frame": "none"
+    }
+  },
+  "content_security_policy" : "script-src 'self' https://www.paypalobjects.com/; object-src 'self'",
+   "content_scripts": [
+    {
+      "matches": ["https://{YOUR_APPENGINE_PROJECT}.appspot.com/login*"],
+      "js": ["auth.js"],
+        "run_at": "document_start"
+    }
+  ]
+}

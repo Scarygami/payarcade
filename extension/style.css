@@ -1,0 +1,125 @@
+* { font-family: 'VT323', cursive; box-sizing: border-box; border: 0; margin: 0;}
+
+html { width: 100%; height: 100%; }
+body { width: 100%; height: 100%; background-color: black; color: #CCC; }
+
+.header {
+  font-size: 3em;
+  text-align: center;
+}
+
+#signin {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  text-align: center; 
+}
+
+#player {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+}
+
+#credits {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+@-webkit-keyframes blink {
+    0% { 
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#insert {
+  position: absolute;
+  font-size: 4em;
+  text-align: center;
+  width: 100%;
+  top: 35%;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-timing-function:ease-in-out;
+}
+
+#gameplay {
+  position: absolute;
+  font-size: 4em;
+  text-align: center;
+  width: 100%;
+  top: 35%;
+}
+
+.pay {
+  position: absolute;
+  cursor: pointer;
+  bottom: 5px;
+  width: 75px;
+  height: 90px;
+  border: 4px solid red;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#start {
+  position: absolute;
+  cursor: pointer;
+  bottom: 5px;
+  left: 5px;
+  width: 75px;
+  height: 90px;
+  border: 4px solid #555;
+  color: #555;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 1.9em;
+}
+
+#start.enabled {
+  color: red;
+  border-color: red;
+}
+
+#pay50 {
+  right: 5px;
+}
+
+#pay100 {
+  right: 90px;
+}
+
+.coinslot {
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  border: 2px solid red;
+  border-right-width: 4px;
+}
+
+.paymessage {
+  position: absolute;
+  width: 55px;
+  text-align: center;
+  color: red;
+  right: 0;
+}
+
+.paymessage .huge {
+  font-size: 1.8em; 
+}
+  
+  
